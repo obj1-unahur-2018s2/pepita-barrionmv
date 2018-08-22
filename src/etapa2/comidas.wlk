@@ -19,20 +19,22 @@ object bigMac {
 object alcaucil {
 	method energiaPorGramo() { return 20 }
 	// completar
-}
 
-object sorgo {
-	method energiaPorGramo() { return 9 }
-
-}
-object mijo {
-	var estaMojado = true
+object mijo {	
+	var estaMojado = false
+	
+	method energiaPorGramo() {return if (estaMojado) {15} else {20} }
 	method secarse(){estaMojado = false}
 	method mojarse(){estaMojado = true}
-	method energiaPorGramo() {
-		if (estaMojado) { return 15 }
-		else (estaMojado) {return 20}
-		}
 }
 
+object canelones {
+	
+	
+}
+
+object canelones {
+	var 
+}
+}
 // despues, agregar mijo y canelones
