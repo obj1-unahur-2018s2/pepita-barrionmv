@@ -9,6 +9,7 @@ object pepita {
 	method comer(cosa, gramos) { energia += cosa.energiaPorGramo() * gramos }
 	method volar(kms) { energia -= kms + 10 }
 	
+	
 	// metodos nuevos
 	method estaDebil() { return energia <50}  // implementar
 	method estaFeliz() { return energia.between(500, 1000) }  // implementar
@@ -21,20 +22,21 @@ object pepita {
 	}
 	
 	method salirAComer() {
-		self.volar(5)		// "self" es una referencia al objeto que recibe el mensaje
+		self.volar(5) {return energia()}	
+		self.comer(alpiste,80) {return energia()}
+		self.volar(5)	{return energia()}// "self" es una referencia al objeto que recibe el mensaje
 		// ... completar este metodo con las otra acciones sobre self
 	}
 	
 	method haceLoQueQuieras() { 
-		if (self.estaDebil()) {
+		if self.estaDebil() { return self.comer(alpiste,20)
 			// completar
 		} 
-		// completar el método, de acuerdo a la estructura
-		// que se deja comentada aca abajo
-//		else if (... otra condicion ...) {
-//			
-//		} else {
-//			
-//		}
+		
+		else if (self.estaFeliz()) { return self.volar(8)
+		
+		} else { return energia()
+			
+		}
 	}
 }

@@ -16,6 +16,8 @@ object marDelPlata {
 }
 
 object noroeste {
-	method energiaPorDestino() { return self *0.1} 
+	method energiaPorDestino() { return pepita.energia *0.1} //hay que importar pepita?
+	
 		//parametro pepita
 }
+
