@@ -1,3 +1,5 @@
+import pepita.*
+
 object patagonia {
 	method energiaPorDestino() {return 30}
 	
@@ -16,7 +18,7 @@ object marDelPlata {
 }
 
 object noroeste {
-	method energiaPorDestino() { return pepita.energia *0.1} //hay que importar pepita?
+	method energiaPorDestino() { return pepita.energia * 0.1} //hay que importar pepita?
 	
 		//parametro pepita
 }
