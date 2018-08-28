@@ -1,18 +1,26 @@
 
+import comidas.*
+
 object pepon {
-	// aca falta un atributo
+	var energia = 0
 	
-	method comer(cosa, cuanto) { }  // implementar
-	method volar(kms) { }           // implementar
-	method haceLoQueQuieras() { }   // implementar
+	method energia() { return energia }
+	method comer(cosa, gramos) { energia += cosa.energiaPorGramo() /2 * gramos  }
+	method volar(kms) { energia -= kms *0.5 + 1 }
+	method haceLoQueQuieras() { self.volar (1)}   // implementar
 }
 
-// implementar el objeto entero, salvo haceLoQueQuieras que lo damos hecho
-// ayuda: conviene ponerle dos atributos
+
 object pipa {
-	/*
-	 * cuando le dicen a pipa que haga lo que quiera, no hace nada
-	 */
-	method haceLoQueQuieras() { }   // queda asi
+		var cantidadKm = 0
+	var cantidadComida= 0
+	
+	method kmRecorridos() {return cantidadKm }
+	method volar(kms) { cantidadKm += kms } 
+	method gramosIngeridos() {return cantidadComida}
+	method comer(gramos) {cantidadComida += gramos}
+	method haceLoQueQuieras() { }   
+	
+	// queda asi
 	// pregunta: ¿por qué es necesario agregar este método, sin código
 }
