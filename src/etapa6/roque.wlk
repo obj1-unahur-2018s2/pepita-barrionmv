@@ -1,18 +1,19 @@
+
+import pepita.*
 import comidas.*
 import masAves.*
-import roque.*
-import pepita.*
 
-
-object susana {  
+object roque {
 	var nombreAve
 	
 	method tuPupiloEs(ave) { nombreAve = ave} 
 	method entrenar() { 
-		nombreAve.comer(alpiste, 100)
-		nombreAve.volar(20)
-		
+		nombreAve.volar(10)
+		nombreAve.comer(alpiste, 300)
+		nombreAve.volar(5)
+		nombreAve.haceLoQueQuieras()
 	}	
 	method pupiloActual() { return nombreAve }
-	
-}  
+			
+	  
+}
