@@ -9,7 +9,7 @@ object susana {
 	
 	method tuPupiloEs(ave) { nombreAve = ave} 
 	method entrenar() { 
-		nombreAve.comer(alpiste, 100)
+		nombreAve.comer(alpiste,100)
 		nombreAve.volar(20)
 		
 	}	

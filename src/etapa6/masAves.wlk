@@ -12,14 +12,15 @@ object pepon {
 
 
 object pipa {
-		var cantidadKm = 0
+	var cantidadKm = 0
 	var cantidadComida= 0
+	var energia = 0 
 	
 	method kmRecorridos() {return cantidadKm }
 	method volar(kms) { cantidadKm += kms } 
 	method gramosIngeridos() {return cantidadComida}
 	method comer(cosa, gramos) {cantidadComida += gramos}
 	method haceLoQueQuieras() { }   
-	
+	method energia() {return energia}
 	
 }
